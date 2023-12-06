@@ -1,0 +1,6 @@
+// Write a program to find the octal equivalent of the entered
+// number.
+#include <stdio.h>
+int main()
+{
+}
