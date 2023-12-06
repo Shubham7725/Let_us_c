@@ -11,4 +11,25 @@
 #include <stdio.h>
 int main()
 {
+    int total_sticks = 21;
+    while (1)
+    {
+        printf("number of sticks left:%d\n", total_sticks);
+        int number;
+        printf("enter the number of sticks you want:");
+        scanf("%d", &number);
+        if (number > 4 || number < 1)
+        {
+            printf("enter correct number\n");
+        }
+        int computer = 5 - number;
+        printf("computer picked:%d\n", computer);
+        total_sticks = total_sticks - 5;
+        if (total_sticks == 1)
+        {
+            printf("number of sticks left:%d\n", total_sticks);
+            printf("you loose");
+            break;
+        }
+    }
 }
